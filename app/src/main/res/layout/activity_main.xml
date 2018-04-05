@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context="com.developervishalsehgal.udacitypracticalquizone.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_gravity="top"
+        app:theme="@style/TransparentBar" />
+
+    <EditText
+        android:id="@+id/username_ed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/email_ed"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/ic_perm_identity_black_24dp"
+        android:hint="UserName"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/email_ed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/ic_mail_outline_black_24dp"
+        android:hint="Email"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/hobbies_ed"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/email_ed"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/ic_speaker_notes_black_24dp"
+        android:hint="Write about yourself"
+        android:inputType="textAutoComplete|textLongMessage|textMultiLine"
+        android:maxLines="4"
+        android:minLines="1"
+        android:singleLine="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hobbies_ed"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="?attr/colorAccent"
+        android:text="Next"
+        android:textColor="#ffffff" />
+
+
+</RelativeLayout>

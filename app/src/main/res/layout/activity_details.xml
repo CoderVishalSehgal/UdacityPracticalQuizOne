@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/about_activity"
+    tools:context="com.developervishalsehgal.udacitypracticalquizone.DetailsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_gravity="top"
+        app:theme="@style/TransparentBar" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginTop="40dp"
+android:layout_below="@id/toolbar"
+        android:layout_centerInParent="true"
+        android:id="@+id/profilepic"
+        android:layout_width="108dp"
+        android:layout_height="108dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:scaleType="centerCrop"
+        android:src="@drawable/user_pp"
+        app:civ_border_color="#0d0d0d"
+        app:civ_border_width="1dp" />
+
+    <TextView
+        android:gravity="center"
+        android:layout_below="@id/profilepic"
+        android:id="@+id/username_tv"
+        android:inputType=""
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:text="Akshit Jain"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_below="@id/username_tv"
+        android:id="@+id/email_tv"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:text="akshit@udacity.com"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_below="@id/email_tv"
+        android:id="@+id/desc_tv"
+        android:gravity="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:text="I'm a Certified Android Developer and Love to make Android Apps."
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>
